@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community Rules | Loria</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink:#ffffff;
+      --muted:rgba(255,255,255,.76);
+      --soft:rgba(255,255,255,.11);
+      --panel:rgba(12,10,18,.74);
+      --panel-strong:rgba(20,15,31,.9);
+      --pink:#ff58d4;
+      --violet:#7c4dff;
+      --yellow:#f8dd3d;
+      --cyan:#59f2ff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: #09070d url("loria_reference_background.jpg") center/cover fixed no-repeat;
+      line-height: 1.66;
+    }
+    body::before {
+      content: "";
+      position: fixed; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(circle at 20% 8%, rgba(124,77,255,.36), transparent 32%),
+        radial-gradient(circle at 86% 14%, rgba(255,190,55,.24), transparent 34%),
+        linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.88));
+    }
+    main {
+      position: relative;
+      width: min(100%, 820px);
+      margin: 0 auto;
+      padding: 24px 16px 58px;
+    }
+    .hero {
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28px 4px 22px;
+    }
+    .topline {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .pill {
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      font-size: 13px;
+    }
+    .brand { color: #151019; background: var(--yellow); }
+    .date { color: var(--ink); background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.16); }
+    h1 {
+      margin: 20px 0 10px;
+      font-size: clamp(40px, 12vw, 72px);
+      line-height: .92;
+      letter-spacing: 0;
+      text-shadow: 0 5px 0 var(--pink), 0 10px 0 rgba(248,221,61,.55);
+    }
+    .subtitle { margin: 0; max-width: 39em; color: rgba(255,255,255,.88); font-size: 16px; }
+    .quick {
+      margin: 18px 0 14px;
+      padding: 18px;
+      border-radius: 26px;
+      background: linear-gradient(135deg, rgba(255,255,255,.16), rgba(255,255,255,.06));
+      border: 1px solid rgba(255,255,255,.16);
+      backdrop-filter: blur(18px);
+    }
+    .quick h2 {
+      margin: 0 0 10px;
+      font-size: 17px;
+      color: #fff;
+    }
+    .quick ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .quick li { margin: 7px 0; }
+    nav {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 9px;
+      margin: 14px 0 22px;
+    }
+    nav a {
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      padding: 10px 12px;
+      border-radius: 16px;
+      color: #fff;
+      text-decoration: none;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.13);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .policy-card {
+      position: relative;
+      overflow: hidden;
+      margin: 16px 0;
+      padding: 24px 20px 22px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 16px 48px rgba(0,0,0,.34);
+      backdrop-filter: blur(20px);
+    }
+    .policy-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -42px -54px auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(255,88,212,.22), transparent 68%);
+    }
+    .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 12px;
+      border-radius: 14px;
+      color: #17101d;
+      background: linear-gradient(135deg, var(--yellow), var(--pink));
+      font-weight: 900;
+      font-size: 13px;
+    }
+    h2 { margin: 0 0 10px; color: #fff; font-size: 23px; line-height: 1.18; }
+    p { margin: 10px 0 0; color: var(--muted); font-size: 15px; }
+    strong { color: #fff; }
+    a { color: #ffec71; }
+    .footer {
+      margin-top: 22px;
+      padding: 18px;
+      border-radius: 22px;
+      color: rgba(255,255,255,.72);
+      background: rgba(0,0,0,.36);
+      font-size: 13px;
+      text-align: center;
+    }
+    @media (max-width: 520px) {
+      main { padding-left: 14px; padding-right: 14px; }
+      nav { grid-template-columns: 1fr; }
+      .policy-card { padding: 22px 17px 20px; border-radius: 24px; }
+      p { font-size: 14.5px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="topline">
+        <div class="pill brand">LORIA</div>
+        <div class="pill date">Last updated: June 26, 2026</div>
+      </div>
+      <h1>Community Rules</h1>
+      <p class="subtitle">A Loria-specific EULA and safety code for consensual, respectful, AI-assisted body-art creation and sharing.</p>
+    </header>
+    <section class="quick">
+      <h2>At a glance</h2>
+      <ul><li>Consent is required for body photos, likenesses, private images, and identity-based edits.</li>
+<li>Sexual exploitation, minor safety violations, hate, harassment, scams, and unsafe skin advice are prohibited.</li>
+<li>Moderation may include removal, sharing limits, suspension, or further action for serious violations.</li></ul>
+    </section>
+    <nav aria-label="Policy sections"><a href="#s01">1. Purpose Of These Rules</a>
+<a href="#s02">2. Consent Comes First</a>
+<a href="#s03">3. Minors And Protected People</a>
+<a href="#s04">4. Nudity, Sexual Content, And Body Sensitivity</a>
+<a href="#s05">5. Harassment, Hate, And Harm</a>
+<a href="#s06">6. Health, Skin, And Real-World Safety</a>
+<a href="#s07">7. AI-Specific Misuse</a>
+<a href="#s08">8. Intellectual Property And Cultural Respect</a>
+<a href="#s09">9. Spam, Scams, And Platform Abuse</a>
+<a href="#s10">10. Reporting And Moderation</a>
+<a href="#s11">11. Enforcement</a>
+<a href="#s12">12. Appeals And Updates</a></nav>
+    <section id="s01" class="policy-card">
+      <span class="num">01</span>
+      <h2>Purpose Of These Rules</h2>
+      <p>These Community Rules are part of Loria's end user license and content standards. They apply to uploaded photos, prompts, AI generations, saved creations, captions, community posts, profile content, chat messages, support interactions, and any other material you create or share through Loria.</p><p>Loria exists for imaginative body-paint, digital skin art, fashion makeup, character concepts, editorial looks, and respectful creative exploration. The rules below are designed to protect consent, safety, privacy, and artistic freedom.</p>
+    </section>
+<section id="s02" class="policy-card">
+      <span class="num">02</span>
+      <h2>Consent Comes First</h2>
+      <p>Only upload or edit a person's body, face, tattoo, scar, clothing, or likeness when you have permission to do so. Do not use Loria to create non-consensual edits, humiliating transformations, sexualized images, identity deception, or content intended to embarrass or pressure a person.</p><p>If a person asks you to remove content involving them, respect that request where you have control. Do not repost, remix, or regenerate content to avoid a removal request.</p>
+    </section>
+<section id="s03" class="policy-card">
+      <span class="num">03</span>
+      <h2>Minors And Protected People</h2>
+      <p>Never upload, request, generate, or share sexual, suggestive, exploitative, or fetishized content involving minors or people who appear to be minors. Do not use Loria to target children, students, patients, employees, or other vulnerable people with body-image manipulation.</p><p>Creative face paint, costume, or festival concepts involving minors must remain age-appropriate, non-sexual, and consent-based. When in doubt, choose a safer subject or use non-identifying references.</p>
+    </section>
+<section id="s04" class="policy-card">
+      <span class="num">04</span>
+      <h2>Nudity, Sexual Content, And Body Sensitivity</h2>
+      <p>Loria may involve body imagery, but it is not a sexual content app. Do not post explicit sexual content, sexual services, non-consensual nudity, intimate body exposure, voyeuristic material, or content that focuses on sexual body parts rather than creative body art.</p><p>Artistic, fashion, editorial, or educational body-paint references must be presented respectfully and within app safety limits. We may restrict content even if it is artistic when it creates privacy, consent, age, or platform risk.</p>
+    </section>
+<section id="s05" class="policy-card">
+      <span class="num">05</span>
+      <h2>Harassment, Hate, And Harm</h2>
+      <p>Do not attack, threaten, bully, shame, stalk, dox, or encourage harassment of another person or group. Do not generate or share hateful symbols, slurs, extremist propaganda, dehumanizing designs, or content that promotes violence or discrimination based on protected characteristics.</p><p>Do not use body-paint tools to mock someone's body, race, skin tone, disability, religion, gender identity, sexual orientation, nationality, age, or medical condition.</p>
+    </section>
+<section id="s06" class="policy-card">
+      <span class="num">06</span>
+      <h2>Health, Skin, And Real-World Safety</h2>
+      <p>AI body-art ideas are visual drafts. Do not present Loria output as medical, dermatology, tattoo, cosmetic, allergy, or product-safety advice. Do not encourage unsafe application of paint, pigment, adhesives, solvents, glitter, prosthetics, light devices, or materials on skin.</p><p>Avoid designs that instruct people to harm themselves, hide injuries, apply substances near eyes or wounds, or ignore irritation. In real projects, follow product labels, hygiene practices, patch testing, ventilation guidance, and professional advice.</p>
+    </section>
+<section id="s07" class="policy-card">
+      <span class="num">07</span>
+      <h2>AI-Specific Misuse</h2>
+      <p>Do not use Loria's AI tools to impersonate real people, fake endorsements, mislead viewers about a person's identity, create deceptive before-and-after claims, remove consent signals, bypass moderation, or generate content that would violate these Rules if made manually.</p><p>The AI is trained and operated by Loria for creative body-paint assistance and does not collect personal information for profiling. You remain responsible for the prompts you enter and the outputs you choose to save, export, or share.</p>
+    </section>
+<section id="s08" class="policy-card">
+      <span class="num">08</span>
+      <h2>Intellectual Property And Cultural Respect</h2>
+      <p>Do not upload or share artwork, tattoos, body-paint designs, logos, characters, photos, or brand marks that you do not have the right to use. Do not claim another creator's work as your own. Credit collaborators and references when appropriate.</p><p>Be thoughtful with cultural, ceremonial, religious, tribal, or traditional designs. Do not use sacred or identity-specific symbols as decoration in a way that is deceptive, hateful, or disrespectful.</p>
+    </section>
+<section id="s09" class="policy-card">
+      <span class="num">09</span>
+      <h2>Spam, Scams, And Platform Abuse</h2>
+      <p>Do not spam posts, comments, chats, support channels, or generation requests. Do not promote scams, malware, phishing, fake giveaways, adult services, illegal products, or unrelated commercial schemes.</p><p>Do not attempt to manipulate discovery, follower counts, challenges, model behavior, reports, purchases, subscriptions, credits, or safety systems.</p>
+    </section>
+<section id="s10" class="policy-card">
+      <span class="num">10</span>
+      <h2>Reporting And Moderation</h2>
+      <p>If you see content or behavior that may violate these Rules, report it through available app tools or contact support@Loria.help. Include enough context for us to understand the issue, such as usernames, timestamps, screenshots, or links where appropriate.</p><p>We may use automated systems, human review, user reports, and safety signals to evaluate content. Moderation decisions may consider context, intent, severity, repeat behavior, legal obligations, and risk to affected people.</p>
+    </section>
+<section id="s11" class="policy-card">
+      <span class="num">11</span>
+      <h2>Enforcement</h2>
+      <p>Depending on the situation, we may remove content, reduce distribution, add warnings, disable sharing, limit features, suspend accounts, revoke access, preserve evidence, notify affected users, or report serious issues to appropriate authorities.</p><p>Trying to evade enforcement by creating new accounts, changing prompts, re-uploading removed content, or instructing others to repost may lead to stronger action.</p>
+    </section>
+<section id="s12" class="policy-card">
+      <span class="num">12</span>
+      <h2>Appeals And Updates</h2>
+      <p>If you believe we made a mistake, contact support@Loria.help with a concise explanation and relevant details. We may not be able to discuss every moderation signal, but we will consider reasonable appeals where available.</p><p>These Rules may evolve as Loria adds features, new creative formats, or community tools. Continued use after an update means you agree to follow the revised Rules.</p>
+    </section>
+    <p class="footer">Questions or requests: <a href="mailto:support@Loria.help">support@Loria.help</a><br>Loria policies are written for mobile reading and may be updated as features change.</p>
+  </main>
+</body>
+</html>

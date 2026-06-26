@@ -1,0 +1,287 @@
+{
+  "appProfile": {
+    "name": "Loria",
+    "category": "AI body paint",
+    "locale": "en-US"
+  },
+  "homeFeed": {
+    "heroSeries": {
+      "title": "Nebula Pulse",
+      "palette": [
+        "violet",
+        "cyan",
+        "rose"
+      ]
+    },
+    "dailyInspiration": {
+      "count": 12,
+      "refreshHours": 24
+    }
+  },
+  "studio": {
+    "uploadAssets": {
+      "designSticker": true,
+      "bodyPhoto": true
+    },
+    "targetArea": {
+      "primary": "torso",
+      "options": [
+        "arms",
+        "neck",
+        "full body"
+      ]
+    }
+  },
+  "generation": {
+    "model": {
+      "owner": "Loria",
+      "purpose": "body art synthesis"
+    },
+    "controls": {
+      "styleIntensity": 83,
+      "refractiveIndex": 1.4,
+      "blendMode": "overlay"
+    }
+  },
+  "promptComposer": {
+    "defaultPrompt": "Bio-lume body paint with electric contours",
+    "negativeTags": [
+      "blur",
+      "extra limbs",
+      "low detail"
+    ]
+  },
+  "inspiration": {
+    "tabs": {
+      "allStyles": true,
+      "cyberpunk": true,
+      "avantGarde": true
+    },
+    "grid": {
+      "columns": 2,
+      "itemSpacing": 14
+    }
+  },
+  "chatGuide": {
+    "expertName": "Elena Vostri",
+    "tone": {
+      "helpful": true,
+      "concise": true
+    },
+    "quickReplies": [
+      "color harmony",
+      "placement",
+      "skin-safe idea"
+    ]
+  },
+  "collectionDetail": {
+    "series": {
+      "number": "01",
+      "name": "Bio-Lume Sculpting"
+    },
+    "gallery": {
+      "items": 4,
+      "layout": "masonry"
+    }
+  },
+  "profile": {
+    "displayMode": "creator",
+    "fanCount": 2326,
+    "savedLooks": {
+      "private": 18,
+      "public": 6
+    }
+  },
+  "community": {
+    "challenge": {
+      "name": "Summer Solstice Challenge",
+      "status": "active"
+    },
+    "posts": {
+      "visible": 8,
+      "featured": 2
+    }
+  },
+  "navigation": {
+    "tabs": {
+      "home": "/",
+      "studio": "/studio",
+      "explore": "/explore",
+      "profile": "/profile"
+    }
+  },
+  "notifications": {
+    "enabled": true,
+    "types": {
+      "styleDrops": true,
+      "challengeUpdates": true,
+      "renderComplete": true
+    }
+  },
+  "assetLibrary": {
+    "stickers": {
+      "count": 128,
+      "formats": [
+        "png",
+        "webp"
+      ]
+    },
+    "textures": {
+      "metallic": 12,
+      "glow": 18
+    }
+  },
+  "paletteEngine": {
+    "skinToneAware": true,
+    "recommendedColors": {
+      "base": "#7B3FF2",
+      "accent": "#00E7FF",
+      "highlight": "#FF4FD8"
+    }
+  },
+  "bodyMap": {
+    "regions": {
+      "face": 16,
+      "torso": 22,
+      "arms": 18,
+      "legs": 18
+    },
+    "symmetry": {
+      "mirror": true,
+      "manualOffset": 0.18
+    }
+  },
+  "renderQueue": {
+    "current": {
+      "status": "ready",
+      "secondsRemaining": 0
+    },
+    "history": {
+      "completed": 34,
+      "drafts": 7
+    }
+  },
+  "export": {
+    "sizes": {
+      "square": 1024,
+      "story": [
+        1080,
+        1920
+      ],
+      "poster": [
+        1242,
+        2688
+      ]
+    },
+    "watermark": {
+      "optional": true
+    }
+  },
+  "onboarding": {
+    "steps": {
+      "permissionIntro": true,
+      "stylePicker": true,
+      "firstCreation": true
+    },
+    "completion": 0.86
+  },
+  "subscription": {
+    "tier": "studio",
+    "limits": {
+      "dailyGenerations": 40,
+      "savedCollections": 30
+    }
+  },
+  "safety": {
+    "contentFilters": {
+      "minorProtection": true,
+      "hateSymbols": true,
+      "graphicHarm": true
+    },
+    "consentReminder": true
+  },
+  "privacy": {
+    "aiPersonalDataCollection": false,
+    "photoPermission": "user controlled",
+    "supportEmail": "support@Loria.help"
+  },
+  "localization": {
+    "primaryLanguage": "en",
+    "supported": [
+      "en",
+      "zh-Hans",
+      "ja",
+      "ko",
+      "es"
+    ]
+  },
+  "analyticsEvents": {
+    "creationStarted": {
+      "sampleRate": 0.25
+    },
+    "styleSaved": {
+      "sampleRate": 0.2
+    }
+  },
+  "accessibility": {
+    "dynamicType": true,
+    "highContrast": true,
+    "voiceLabels": {
+      "generateButton": "Generate body art"
+    }
+  },
+  "theme": {
+    "light": {
+      "background": "#FBF8FF"
+    },
+    "dark": {
+      "background": "#09070D"
+    },
+    "accent": {
+      "primary": "#8B44F7"
+    }
+  },
+  "cache": {
+    "imageThumbnails": {
+      "maxItems": 80,
+      "ttlDays": 14
+    },
+    "draftAutosave": {
+      "intervalSeconds": 20
+    }
+  },
+  "serverConfig": {
+    "region": "global",
+    "timeouts": {
+      "generationSeconds": 90,
+      "uploadSeconds": 45
+    }
+  },
+  "experiments": {
+    "layoutVariant": {
+      "name": "compactStudio",
+      "enabled": true
+    },
+    "paletteCards": {
+      "enabled": false
+    }
+  },
+  "support": {
+    "email": "support@Loria.help",
+    "responseWindow": {
+      "businessDays": 3
+    },
+    "topics": [
+      "account",
+      "billing",
+      "privacy",
+      "creative tools"
+    ]
+  },
+  "releaseFlags": {
+    "bodyPhotoImport": true,
+    "chatExpert": true,
+    "seriesCollections": true,
+    "communityChallenge": true
+  }
+}
